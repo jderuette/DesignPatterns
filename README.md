@@ -1,2 +1,2 @@
 # DesignPatterns
-Des exemples d'utilisation des Desing Patters (GoF principalement)
+Des exemples d'utilisation des Design Patters (GoF principalement)
