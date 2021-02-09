@@ -1,0 +1,23 @@
+package org.djer.designPatterns.proxy.virtualProxy;
+
+/**
+ * 
+ * @author djer13 & WikiBook
+ */
+public class ProxyImage implements Image {
+
+	private String filename;
+	private Image image;
+
+	public ProxyImage(String filename) {
+		this.filename = filename;
+	}
+
+	public void displayImage() {
+		if (image == null) {
+			image = new RealImage(filename); // Chargement sur demande seulement
+		}
+		image.displayImage();
+	}
+
+}
