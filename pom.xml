@@ -12,6 +12,7 @@
   	<module>factory</module>
   	<module>proxy</module>
   	<module>adapter</module>
+  	<module>decorator</module>
   </modules>
   
   
