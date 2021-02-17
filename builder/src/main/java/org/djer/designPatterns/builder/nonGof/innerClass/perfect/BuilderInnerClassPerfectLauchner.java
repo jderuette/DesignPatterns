@@ -4,7 +4,7 @@ package org.djer.designPatterns.builder.nonGof.innerClass.perfect;
  * @author djer13
  *
  */
-public class BuilderInnerClassGoodLauchner {
+public class BuilderInnerClassPerfectLauchner {
 
 	/**
 	 * @param args
