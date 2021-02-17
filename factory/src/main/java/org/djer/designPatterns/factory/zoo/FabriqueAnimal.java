@@ -16,13 +16,27 @@ public class FabriqueAnimal {
 		return instance;
 	}
 
-	public Animal getAnimal(String typeAnimal) throws ExceptionCreation {
+	/**
+	 * Avoid using "chien" deprecié in 2.5
+	 * @param typeAnimal
+	 * @return
+	 * @throws ExceptionCreation
+	 */
+	public Animal createAnimal(String typeAnimal) throws ExceptionCreation {
 		if (typeAnimal.equals("chat"))
+			return new Chat();
+		if (typeAnimal.equals("cat"))
 			return new Chat();
 		else if (typeAnimal.equals("chien"))
 			return new Chien();
+		else if (typeAnimal.equals("dog"))
+			return new Chien();
+		else if (typeAnimal.equals("reptile"))
+			return new Reptile();
+		else if (typeAnimal.equals("serpent"))
+			return new Reptile();
 		else
-			throw new ExceptionCreation("Impossible de créer un " + typeAnimal);
+			throw new ExceptionCreation("Le type " + typeAnimal + " n'existe pas (ou plus)");
 	}
 
 }

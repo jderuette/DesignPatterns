@@ -54,7 +54,6 @@ public class PerfectComplexe {
 			attribut3 = att3;
 			return this;
 		}
-		
 	}
 
 	public String toString() {
@@ -71,26 +70,11 @@ public class PerfectComplexe {
 	}
 
 	/**
-	 * @param att1 the attribut1 to set
-	 */
-	public void setAttribut1(int att1) {
-		this.attribut1 = att1;
-	}
-
-	/**
 	 * @return the attribut2
 	 */
 	public String getAttribut2() {
 		return attribut2;
 	}
-
-	/**
-	 * @param att2 the attribut2 to set
-	 */
-	public void setAttribut2(String att2) {
-		this.attribut2 = att2;
-	}
-
 	/**
 	 * @return the attribut3
 	 */

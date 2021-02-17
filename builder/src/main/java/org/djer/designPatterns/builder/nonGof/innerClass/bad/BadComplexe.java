@@ -13,8 +13,8 @@ public class BadComplexe {
 		super();
 	}
 	
-	
 	public BadComplexe(int att1) {
+		super();
 		this.attribut1 = att1;
 	}
 

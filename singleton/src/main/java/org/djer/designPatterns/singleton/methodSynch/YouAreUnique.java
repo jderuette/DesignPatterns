@@ -21,6 +21,7 @@ public class YouAreUnique {
 	private YouAreUnique() {
 	}
 
+	/**  Synchronized to avoid "race condition". */
 	public static synchronized YouAreUnique getInstance() {
 		if (null == INSTANCE) {
 			INSTANCE = new YouAreUnique();

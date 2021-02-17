@@ -17,14 +17,14 @@ public class BuilderInnerClassBadLauchner {
 		System.out.println("==== Mauvaise utilisation !!!! Avec le constrcuteur par défaut");
 		BadComplexe cBad = new BadComplexe();
 		try {
-		System.out.println("cbad : " + cBad);
+			System.out.println("cbad : " + cBad);
 		} catch (NullPointerException npe) {
 			//on ne devrait jamais catcher NPE !! 
 			System.err.println("ERREUR : un NullPointerException c'est produit en essayant d'afficher cBad ! ");
 		}
 		
 		System.out.println("==== Mauvaise utilisation !!!! Avec le constrcuteur attendant un paramètre");
-		BadComplexe cBad2 = new BadComplexe();
+		BadComplexe cBad2 = new BadComplexe(28);
 		try {
 		System.out.println("cbad2 : " + cBad2);
 		} catch (NullPointerException npe) {
@@ -39,7 +39,7 @@ public class BuilderInnerClassBadLauchner {
 		System.out.println("cBad3 : " + cBad3);
 		
 		System.out.println("==== Avec une meilleur classe (Idéalement BacComplexe devrait être 'abstract')");
-		BadComplexe c2 = BetterBadComplexe.Builder.create(28); //On construit toujours des **Bad**, mais meiux car plus de risques d'erreurs  !
+		BadComplexe c2 = BetterBadComplexe.Builder.create(28); //On construit toujours des **Bad**, mais mieux car plus de risques d'erreurs  !
 		
 		//BadComplexe c2 = new BetterBadComplexe(); //IMPOSSIBLE : constructeur devenue invisible !
 		//BadComplexe c2 = new BetterBadComplexe(42); //IMPOSSIBLE : constructeur devenue invisible !
