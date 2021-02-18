@@ -29,5 +29,9 @@ public class Chien extends Animal {
 	public void aboyer() {
 		System.out.println(super.name + " : ouaf !");
 	}
-
+	
+	public void monterLaGarde() {
+		System.out.println(super.name + " surveilel les environ");
+	}
+	
 }

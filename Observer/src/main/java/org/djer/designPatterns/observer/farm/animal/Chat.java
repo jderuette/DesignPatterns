@@ -28,5 +28,13 @@ public class Chat extends Animal {
 	public void miauler() {
 		System.out.println(super.name + " : miaou");
 	}
-
+	
+	public void manger() {
+		System.out.println(super.name + " mange");
+	}
+	
+	public void dormire() {
+		System.out.println(super.name + " broute");
+	}
+	
 }

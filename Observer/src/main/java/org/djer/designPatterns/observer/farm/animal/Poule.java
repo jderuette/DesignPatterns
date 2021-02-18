@@ -28,5 +28,14 @@ public class Poule extends Animal {
 	public void chanter() {
 		System.out.println(super.name + " : CotCot !");
 	}
+	
+	public void gratterLeSol() {
+		System.out.println(super.name + " cherche un vers");
+	}
+	
+	public void pondre() {
+		System.out.println(super.name + " pond un oeuf");
+		chanter();
+	}
 
 }
