@@ -1,16 +1,10 @@
 package org.djer.designPatterns.observer.farm.animal;
 
-import org.djer.designPatterns.observer.farm.Subject;
-
 /**
  * 
  * @author djer13
  */
 public class Cheval extends Animal {
-
-	public Cheval(Subject sub, String aName) {
-		super(sub, aName);
-	}
 
 	/**
 	 * 
@@ -21,8 +15,10 @@ public class Cheval extends Animal {
 	}
 
 	@Override
-	public void update() {
-		hennir();
+	public void update(String message) {
+		if (message.equals("Taper la barrière")) {
+			hennir();
+		}
 	}
 
 	public void hennir() {
